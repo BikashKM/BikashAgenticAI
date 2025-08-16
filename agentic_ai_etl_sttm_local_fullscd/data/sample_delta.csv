@@ -1,0 +1,3 @@
+customer_id,first_name,last_name,email,country,segment,city,order_date,total_amount
+4,Derek,Li,derek@simple.com,ca,Consumer,Oslo,2024-05-05,130
+5,Eve,Stone,eve@@valid.com,us,Consumer,Cicago,2024-03-03,300.99

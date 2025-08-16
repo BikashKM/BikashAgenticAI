@@ -1,0 +1,11 @@
+ui:
+  default_scd: SCD2
+  default_load_mode: Incremental (delta)
+  enable_validation: true
+  enable_dry_run: false
+  model_default: gpt-4o-mini
+llm:
+  max_tokens: 2000
+  temperature: 0.0
+output:
+  dir: output

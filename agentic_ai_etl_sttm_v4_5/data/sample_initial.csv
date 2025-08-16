@@ -1,0 +1,8 @@
+customer_id,first_name,last_name,email,country,segment,city,order_date,total_amount
+1,Alice,Nguyen,alice@example.com,us,Consumer,NYC,2024-01-10,100
+2,Bob,Smith,bob.smith@company.co.uk,uk,Corporate,London,2024-07-02,250.5
+3,Carla,Diaz,carla.diaz@example.com,ca,Home Office,Toronto,2023-12-28,80
+4,Derek,Li,derek@invalid,no,Consumer,Oslo,2024-05-05,120
+5,Eve,Stone,eve@@bad.com,us,Consumer,Boston,2024-03-03,300.99
+6,Fay,Kim,fay@example.com, ,Home Office,Seoul,2024-02-11,50.75
+7,Gus,Park,gus@domain.sub.co,kr,Corporate,Seoul,2024-08-14,500.01
