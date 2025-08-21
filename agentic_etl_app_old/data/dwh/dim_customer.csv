@@ -1,0 +1,9 @@
+customer_id,first_name,last_name,email,country_code,country_name,effective_start,effective_end,is_current
+C001,Ana,Patel,ana.patel@example.com,US,United States,2025-08-20 17:37:37,2025-08-20 17:42:22,False
+C001,Ana,Patel,ana.patel@example.com,US,United States,2025-08-20 17:42:22,,True
+C002,Ben,Lee,ben.lee@example.com,CA,Canada,2025-08-20 17:37:37,2025-08-20 17:42:22,False
+C002,Ben,Lee,ben.lee@example.com,CA,Canada,2025-08-20 17:42:22,,True
+C003,Cara,Ng,carangatexample.com,US,India,2025-08-20 17:37:37,2025-08-20 17:42:22,False
+C003,Cara,Ng,carangatexample.com,US,India,2025-08-20 17:42:22,,True
+C004,Dan,Roy,dan.roy@example.com,IN,,2025-08-20 17:37:37,2025-08-20 17:42:22,False
+C004,Dan,Roy,dan.roy@example.com,IN,,2025-08-20 17:42:22,,True

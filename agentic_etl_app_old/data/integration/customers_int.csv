@@ -1,0 +1,5 @@
+customer_id,first_name,last_name,email,country_code,country_name
+C001,Ana,Patel,ana.patel@example.com,US,United States
+C002,Ben,Lee,ben.lee@example.com,CA,Canada
+C003,Cara,Ng,carangatexample.com,US,India
+C004,Dan,Roy,dan.roy@example.com,IN,

@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset="utf-8"><title>ETL Report</title>
+<style>body{font-family:Arial;margin:24px}h1{margin-bottom:0}table{border-collapse:collapse}td,th{border:1px solid #ddd;padding:6px}</style>
+</head><body>
+<h1>Agentic ETL — Run Report</h1>
+<p><strong>Run ID:</strong> {{ run_id }} | <strong>When:</strong> {{ when }}</p>
+<h2>Configuration</h2><ul>
+  <li>Sources: {{ config.sources }}</li>
+  <li>Targets: landing={{ config.landing }}, integration={{ config.integration }}, dwh={{ config.dwh }}</li>
+</ul>
+<h2>Landing</h2><p>{{ landing_msg }}</p>
+<h2>DQ Summary</h2><p>Passed: {{ dq.summary.passed }} / {{ dq.summary.total }}, Failed: {{ dq.summary.failed }}</p>
+<h2>Integration</h2><p>{{ integration_msg }}</p>
+<h2>DWH</h2><p>{{ dwh_msg }}</p>
+</body></html>

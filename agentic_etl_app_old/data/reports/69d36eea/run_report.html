@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Agentic ETL Report</title>
+<style>body{font-family:Arial,Helvetica,sans-serif;margin:24px}h1{margin-bottom:0}code,pre{background:#f4f4f4;padding:4px;border-radius:4px}</style>
+</head><body>
+<h1>Agentic ETL — Run Report</h1>
+<p><strong>Run ID:</strong> 69d36eea | <strong>When:</strong> 2025-08-20 17:48:14 UTC</p>
+
+<h2>Configuration</h2>
+<ul>
+  <li>Source: Local CSV</li>
+  <li>Landing Target: Local CSV</li>
+  <li>Integration Target: Local CSV</li>
+  <li>DWH Target: Local CSV</li>
+</ul>
+
+<h2>Landing</h2>
+<p>Records: 4, Columns: 6</p>
+<p>Location: <code>data\landing\customers.csv</code></p>
+
+<h2>Data Quality</h2>
+<p>Passed: 8 / 9, Failed: 1</p>
+
+<h2>Integration</h2>
+<p>Rows Written: 4, Table: customers_int, SCD: SCD1</p>
+<p>Location: <code>data\integration\customers_int.csv</code></p>
+
+<h2>DWH</h2>
+<p>Rows Written: 8, Table: dim_customer, SCD: SCD2</p>
+<p>Location: <code>data\dwh\dim_customer.csv</code></p>
+
+</body></html>
