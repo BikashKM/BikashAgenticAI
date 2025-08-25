@@ -1,0 +1,37 @@
+# Copy to config/connections.yaml and fill as needed
+local_sqlite:
+  integration_db: "data/integration.db"
+  warehouse_db: "data/warehouse.db"
+
+aws:
+  aws_access_key_id: "<YOUR_KEY>"
+  aws_secret_access_key: "<YOUR_SECRET>"
+  region: "us-east-1"
+
+snowflake:
+  account: "<account>"
+  user: "<user>"
+  password: "<password>"
+  role: "<role>"
+  warehouse: "<warehouse>"
+  database: "<database>"
+  schema: "<schema>"
+
+redshift:
+  host: "<host>"
+  port: 5439
+  db: "<db>"
+  user: "<user>"
+  password: "<password>"
+
+databricks:
+  server_hostname: "<hostname>"
+  http_path: "<http_path>"
+  token: "<token>"
+
+email:
+  smtp_host: "smtp.example.com"
+  smtp_port: 587
+  username: "user@example.com"
+  password: "<password>"
+  from_email: "noreply@example.com"

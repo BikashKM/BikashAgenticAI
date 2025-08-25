@@ -1,0 +1,31 @@
+# STTM for Sales Fact
+name: sales_fact
+scd_type: 1
+business_key: ["order_id"]
+source_orders:
+  uri: "file://data/samples/orders.csv"
+  table: "landing_orders"
+source_customers_ref:
+  table: "dw_customer_dim"
+target_integration:
+  table: "int_sales_fact_stage"
+  mappings:
+    - source: "order_id"
+      target: "order_id"
+    - source: "customer_id"
+      target: "customer_id"
+    - source: "order_ts"
+      target: "order_ts"
+    - source: "amount"
+      target: "amount"
+    - source: "currency"
+      target: "currency"
+    - source: "status"
+      target: "status"
+target_dwh:
+  table: "dw_sales_fact"
+  mappings:
+    - expr: "CAST(strftime('%Y', order_ts) AS INT)"
+      target: "order_year"
+    - expr: "CAST(strftime('%m', order_ts) AS INT)"
+      target: "order_month"

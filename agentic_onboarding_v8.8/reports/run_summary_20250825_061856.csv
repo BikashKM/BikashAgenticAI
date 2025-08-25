@@ -1,0 +1,7 @@
+ts,status,detail
+2025-08-25T06:12:57.989465+00:00,landing_complete,data/landing\landing_customers.csv rows=25
+2025-08-25T06:14:02.765957+00:00,landing_complete,data/landing\landing_customers.csv rows=25
+2025-08-25T06:14:55.707456+00:00,landing_complete,data/landing\landing_customers.csv rows=25
+2025-08-25T06:16:34.156278+00:00,integration_complete,data/integration\int_customer_dim_stage.csv rows=25
+2025-08-25T06:18:11.220176+00:00,integration_complete,data/integration\int_customer_dim_stage.csv rows=25
+2025-08-25T06:18:56.660889+00:00,dwh_complete,data/dwh\dw_customer_dim.csv rows=25

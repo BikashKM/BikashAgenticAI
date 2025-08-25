@@ -1,0 +1,40 @@
+# STTM for Customer Dimension (Integration & DWH)
+name: customer_dim
+scd_type: 2   # 1 or 2
+business_key: ["customer_id"]
+surrogate_key: "customer_sk"
+effective_from: "effective_from"
+effective_to: "effective_to"
+current_flag: "is_current"
+source:
+  uri: "file://data/samples/customers.csv"
+  table: "landing_customers"
+target_integration:
+  table: "int_customer_dim_stage"
+  mappings:
+    - source: "customer_id"
+      target: "customer_id"
+    - source: "email"
+      target: "email"
+    - source: "first_name"
+      target: "first_name"
+    - source: "last_name"
+      target: "last_name"
+    - source: "country"
+      target: "country"
+    - source: "state"
+      target: "state"
+    - source: "zip"
+      target: "zip"
+    - source: "birthdate"
+      target: "birthdate"
+    - source: "signup_ts"
+      target: "signup_ts"
+    - source: "is_active"
+      target: "is_active"
+target_dwh:
+  table: "dw_customer_dim"
+  # derive surrogate key and scd columns automatically
+filters:
+  - column: "country"
+    include: ["US", "CA"]
